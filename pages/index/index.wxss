@@ -1,0 +1,31 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-logo {
+  width: 256rpx;
+  height: 256rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.index-btn{
+  border-radius: 10px;
+  margin:5px;
+  width: 250px;
+  text-align: center;
+  font-size: 15px;
+}
+page{
+  background-image: url(https://pic1.zhimg.com/80/v2-44910a91af704c61bb05e1cf44910806_720w.jpg);
+  background-size: 100% 100%;
+}
+.plain-hover{
+  position: relative;
+  top: 3rpx;
+  box-shadow:0px 0px 10px #bbbec4 inset; 
+}
+

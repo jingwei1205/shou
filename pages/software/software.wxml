@@ -1,0 +1,117 @@
+<!-- pages/software/software.wxml -->
+<view class="container">
+       <text class="title">{{title}}</text>
+       <image class="cover" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/classroom.jpg?sign=0cdf3fb5403515672ecf0c5ba7306117&t=1593267872"></image>
+       <text class="intro">{{introduce}}</text>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/1.png?sign=7c54e9f18c8de13d4955d8040e83bcff&t=1593267701" class="title-img"></image>
+       <text class="subtitle">{{title1}}</text>
+       <text class="para">{{para1}}</text>
+       <scroll-view scroll-x="true" style="margin-left:20px">
+              <view class="banner" scroll-x="true">
+                     <view class="banner_Item">
+                            <image class="slide-img" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/activity.jpg?sign=31fd7127f2e4c2af55e6cdfef8cf6f84&t=1593267941"></image>
+                     </view>
+                     <view class="banner_Item">
+                            <image class="slide-img" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/photo.jpg?sign=4890b18a93dac741fa486bb605ff3786&t=1593267889"></image>
+                     </view>
+                     <view class="banner_Item">
+                            <image class="slide-img" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/college.jpg?sign=0341201720f5d8601ade147d5b839994&t=1593267905"></image>
+                     </view>
+                     <view class="banner_Item">
+                            <image class="slide-img" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/gate.jpg?sign=d5b2468ec936da22c4d78dec23d2c30b&t=1593267915"></image>
+                     </view>
+              </view>
+       </scroll-view>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/2.png?sign=a00a99221bd549003c4ede2728190118&t=1593267747" class="title-img"></image>
+       <text class="subtitle">2.师资力量</text>
+       <template name="teacher">
+              <view class="outlayer">
+                     <view class="person-intro">
+                            <image src="{{img}}" class="photo"></image>
+                            <text class="person">{{name}}</text>
+                     </view>
+                     <text space="ensp">    {{teacherIntro}}</text>
+                     <view>
+                            <text style="font-weight:bold">\n主持科研项目：</text>
+                     </view>
+                     <view>
+                            <text>{{majarContent}}</text>
+                     </view>
+                     <view>
+                            <text style="font-weight:bold">\n教学工作：</text>
+                     </view>
+                     <view>
+                            <text>{{teachContent}}</text>
+                     </view>
+              </view>
+       </template>
+       <view wx:for="teacher_info" wx:key wx:if="{{index<3}}">
+              <template is="teacher" data="{{...teacher_info[index]}}"></template>
+       </view>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/3.png?sign=f8edd159c5ffcd3d60407e014859023c&t=1593267823" class="title-img"></image>
+       <text class="subtitle">3.就业前景</text>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/salary.jpg?sign=76dd8e70f2bbd5f83d3c77ecb67f5d7d&t=1593267978" style="width:90%;"></image>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/sheet.jpg?sign=33c8b23fd87fe0d083ce13d798fb2336&t=1593267991" style="width:90%;"></image>
+       <view style="width:90%;">
+              <text space="ensp">    本专业学生毕业后可在计算机软件专业公司、信息咨询公司、以及金融等其它独资、合资企业工作，从事软件工程师等职业。</text>
+       </view>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/1.png?sign=7c54e9f18c8de13d4955d8040e83bcff&t=1593267701" class="title-img"></image>
+       <text class="subtitle">4.科研介绍</text>
+       <view class="box">
+       <text style="font-weight:bold;">研究方向：</text>
+       <text>\n云计算与遥感大数据方向\n海洋大数据分析\n人工智能鱼动画及应用\n数据分析及智能应用开发\n机器学习、计算机视觉</text>
+       </view>
+       <scroll-view scroll-x="true" style="margin-left:20px">
+              <view class="banner" scroll-x="true">
+                     <view class="banner_Item">
+                            <image class="slide-img" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/m1.jpg?sign=49857377fa9b584308cfb816c3755d90&t=1593268014"></image>
+                     </view>
+                     <view class="banner_Item">
+                            <image class="slide-img" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/m2.jpg?sign=38640f13e80dddc776d84040a27258ad&t=1593268023"></image>
+                     </view>
+                     <view class="banner_Item">
+                            <image class="slide-img" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/m3.jpg?sign=cabe153f577ad3f4744342ac5184e064&t=1593268030"></image>
+                     </view>
+                     <view class="banner_Item">
+                            <image class="slide-img" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/m4.jpg?sign=84101afbab50b70bb95f34fc339201f0&t=1593268038"></image>
+                     </view>
+              </view>
+       </scroll-view>
+       <view class="box" style="background-color:#84C1FF;">
+       <text style="font-weight:bold;">人工智能鱼实验室</text>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/r1.jpg?sign=d1f86dda763c33eb8cc6e70a25eb3d2f&t=1593268139" style="width:90%;"></image>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/r2.jpg?sign=682ce51117cc2ff3be11631ccb4584f7&t=1593268148" style="width:90%;"></image>
+       <text>\n实验室运用3D扫描仪、数字头盔、3D投影仪和展示设备、高端图形工作站、光学交互设备、声呐探测仪、高速摄像机等先进的软硬件环境，为人工智能鱼、数字动画和虚拟现实作品的研发提供了雄厚的基础，其成果可广泛应用于游戏娱乐、科普教育及科学研究。</text>
+       </view>
+       <view class="box" style="background-color:#A6A6D2;">
+       <text style="font-weight:bold;">智能感知国际合作实验室</text>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/z1.jpg?sign=1c954ba690134245f9f0d19500b82187&t=1593268162" style="width:90%;"></image>
+       <text>\n智能感知国际合作实验室由上海海洋太学与荷兰埃因霍温科技大学和澳大利亚昆士兰科技大学联合成立于2016年11月。实验室的目标是联合专业资源和设施，建立一个智能传感领域的跨学科研究国际实验室，以实现尖端创新的全球影响。实验室的主要研究方向包括：智慧海洋传感、智能传感与环境智能、环境与公民感应、范围图像传感器、本地化和无线物联网通信等。</text>
+       </view>
+       <view class="box" style="background-color:#C07AB8;">
+       <text style="font-weight:bold;">数据处理&移动开发实验室</text>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/w1.jpg?sign=a1042796fd88791a5487412a26a42525&t=1593268186" style="width:90%;"></image>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/w2.jpg?sign=7845175ab045f316facd0eb3a96ab7bb&t=1593268195" style="width:90%;"></image>
+       <text style="font-weight:bold;">\n远洋渔业信息处理与智能服务</text>
+       <text>\n主要研究方向：数据挖掘及其应用；物联网及其应用；食品供应链、安全品质评价；语音识别、语音文档检索。</text>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/w3.jpg?sign=0763e5aed9415a515bda14f9678fbaa8&t=1593268206" style="width:90%;"></image>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/w4.jpg?sign=dbcfdfc13ecfce8cd8edff7914c15d78&t=1593268214" style="width:90%;"></image>
+       <text style="font-weight:bold;">\n移动开发实验室</text>
+       <text>\n主要研究方向：数据分析及智能应用开发；数据挖掘及应用；云计算与遥感大数据方向；业务流程管理、服务计算、大数据分析。</text>
+       </view>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/2.png?sign=a00a99221bd549003c4ede2728190118&t=1593267747" class="title-img"></image>
+       <text class="subtitle">5.优秀学生</text>
+       <view style="border:2px solid #84C1FF;width:90%;margin:10px;">
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/pzy.jpg?sign=cbb24c27c1644db18f7eb059c59a2559&t=1593268239" style="width:100%;"></image>
+       <text>\n我是2017级软件工程专业二班班长彭志远，我待事的态度是认真、负责、忠于职守，待人的态度是热情、真诚、富有耐心。在过去的两年里，我积极服务于同学，连续两年被评为“优秀学生干部”。</text>
+       </view>
+       <view style="border:2px solid #84C1FF;width:90%;margin:10px;">
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/zdl.jpg?sign=ab58329fb08d10cb6d7ff1967a394894&t=1593268269" style="width:100%;"></image>
+       <text>\n来自于16软工一班。预备党员，现在担任班长一职。在工作方面，尽职尽责，积极配合其他班委完成班级工作。在学习方面，成绩位于专业前列，多次获得一等人民奖学金。在科创方面，积极参加各种科创比赛，获得过中国大学生计算机设计大赛三等奖、上海市计算机应用能力大赛三等奖，上海市汇创青春一等奖、中国高校计算机设计大赛上海市二等奖、蓝桥杯上海赛区三等奖等多个奖项。</text>
+       </view>
+       <view style="border:2px solid #84C1FF;width:90%;margin:10px;">
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/qxy.jpg?sign=a41dae0bcc637548a0ddd7617019f803&t=1593268254" style="width:100%;"></image>
+       <text>\n来自于16软工一班。预备党员，现在担任班长一职。在工作方面，尽职尽责，积极配合其他班委完成班级工作。在学习方面，成绩位于专业前列，多次获得一等人民奖学金。在科创方面，积极参加各种科创比赛，获得过中国大学生计算机设计大赛三等奖、上海市计算机应用能力大赛三等奖，上海市汇创青春一等奖、中国高校计算机设计大赛上海市二等奖、蓝桥杯上海赛区三等奖等多个奖项。</text>
+       </view>
+       <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/welcome.gif?sign=5ee880e03b3ae87ac58ff0cfaace692a&t=1593268346"></image>
+</view>

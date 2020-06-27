@@ -1,0 +1,81 @@
+/* pages/software/software.wxss */
+.container{
+  padding: 10rpx 0;
+}
+.intro{
+  width: 90%;
+  height: auto;
+  color: #808080;
+  border: 2px dashed #808080;
+  margin:10px;
+}
+.title{
+  font-size: 30px;
+  font-weight: bold;
+  width: 90%;
+}
+.subtitle{
+  font-size: 20px;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+}
+.cover{
+  margin: 20rpx;
+  border-radius: 10px;
+  width: 90%;
+}
+.para{
+  width: 90%;
+}
+.title-img{
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+}
+.banner{
+  height:512rpx; 
+  width:90%;
+  display: flex;
+  display: -webkit-box;
+  flex-direction: column;
+} 
+.banner_Item{ 
+ width: 512rpx;
+ height: 512rpx;
+ margin-right:10rpx;
+}
+.slide-img{
+  width: 512rpx;
+  height: 512rpx;
+  border-radius: 10px;
+}
+.photo{
+  width: 128px;
+  height: 128px;
+  margin-left:50px;
+  border-radius: 100px;
+}
+.person{
+  font-weight: bold;
+}
+.person-intro{
+  flex-direction: row;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.outlayer{
+  flex-direction: column;
+  width: 90%;
+  border:2px dashed #808080;
+  margin:15px;
+}
+.box{
+  background-color: yellow;
+  margin: 10px;
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+}

@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+      <image class="index-logo" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/logo.png?sign=0c31b1ff3d174097be042487cd5b5957&t=1593268850" mode="cover"></image>
+      <button hover-class="plain-hover" plain="true" class="index-btn" bindtap="goToCampus">进入校园</button>
+      <button hover-class="plain-hover" plain="true" class="index-btn" bindtap="learnSoftware">软件工程专业招生宣传</button>
+  </view>
+</view>
