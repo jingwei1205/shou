@@ -1,2 +1,26 @@
 <!--pages/campus/campus.wxml-->
-<text>pages/campus/campus.wxml</text>
+<swiper class="swiperItem" indicator-dots="true" autoplay="true" interval="3000" duration="1000" circular="true" indicator-active-color="#1296db">
+	<block wx:for="{{imageItems}}" wx:key="*this" wx:for-item="img">
+		<swiper-item>
+			<image class="swiperItem" bindtap="imgTap" data-link="{{img.link}}" data-id="{{img.id}}" src="{{img.imgsrc}}" mode="aaspectFill" lazy-load="false">
+			</image>
+		</swiper-item>
+	</block>
+</swiper>
+<view class="btn-view">
+	<button class="btn" style="float:left">院系介绍
+		<image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/college.png?sign=a689eaf9892484d95fd38a00d041b9ec&t=1593847241" style="width:70px;height:70px">
+    </image>
+  </button>
+	<button class="btn" style="float:center">招生视频
+  <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/video.png?sign=4983faed26e796d2e910805996508e6f&t=1593847538" style="width:70px;height:70px">
+  </image>
+  </button>
+	<button class="btn" style="float:right">音乐广场
+  <image src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/music.png?sign=8b7fcc143a66514c7d2231d5f3c23b94&t=1593847595" style="width:50px;height:50px">
+  </image>
+  </button>
+</view>
+<template name="news">
+
+</template>

@@ -1,13 +1,42 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/campus/campus",
     "pages/software/software",
     "pages/logs/logs",
-    "pages/campus/campus"
+    "pages/me/me",
+    "pages/talk/talk",
+    "pages/out/out"
   ],
+  "tabBar": {
+    "color": "#FFFFFF",
+    "selectedColor": "#1296db",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/campus/campus",
+        "text": "Campus",
+        "iconPath": "pages/imgs/school.png",
+        "selectedIconPath": "pages/imgs/schooldown.png"
+      },
+      {
+        "pagePath": "pages/talk/talk",
+        "text": "Moment",
+        "iconPath": "pages/imgs/talk.png",
+        "selectedIconPath": "pages/imgs/talkdown.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "Me",
+        "iconPath": "pages/imgs/me.png",
+        "selectedIconPath": "pages/imgs/medown.png"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#4b5cc4",
+    "navigationBarBackgroundColor": "#0066ff",
     "navigationBarTitleText": "牵我的shou",
     "navigationBarTextStyle": "white"
   },
