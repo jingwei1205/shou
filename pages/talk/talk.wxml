@@ -1,2 +1,25 @@
 <!--pages/talk/talk.wxml-->
-<text>pages/talk/talk.wxml</text>
+<view class="section tc">
+  <video
+	  style="width:100%"
+    src="https://apd-86813990965fe7c816e4a3b3dbefe19c.v.smtcdns.com/om.tc.qq.com/Au-zwapcvLnNlL7G8J3yvX96-nwW4WGh_U05LUlbxnYs/uwMROfz2r5zCIaQXGdGnC2dfDmavB6NbsWKJAiRTQBPbT70a/w0880dxpktz.mp4?sdtfrom=v1010&guid=62348be844fdc2b0bea554cae2e6c22f&vkey=A5B93EAB9EA2824A0C219F01708CA710836D549FA813ACBEB44A38363650E5EFD79FE851853F61E2EEEA7A52B0756A27D89F391F133CD4B99BD41C1A0F0F9196770609E3B1D643F32F1303859C7B2B42ECE3DA93A3F253B492E164EB83D49394664CABAFED89C08D982BACFFA76C0D27DE7A07FF7E9E065FCC1221282169D80D"
+    danmu-list="{{danmuList}}"
+    enable-danmu
+    danmu-btn
+    controls
+  ></video>
+</view>
+<template name="college">
+	<view class="outlayer">
+		<image src="{{img}}" class="photo" mode="widthFix"></image>
+		<view style="font-weight:bold;text-align:center">
+			<text>\n{{name}}学院简介</text>
+		</view>
+		<view style="width:100%">
+			<text>{{Content}}</text>
+		</view>
+	</view>
+</template>
+<view wx:for="{{college_info}}">
+	<template is="college" data="{{...college_info[index]}}"></template>
+</view>

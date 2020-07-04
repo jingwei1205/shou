@@ -24,6 +24,12 @@ App({
     }
   },
   globalData:{
-    userInfo:null
+    userInfo:null,
+    url:"https://api.jisuapi.com/xiaohua/text",
+    key:"65989aa2cd68d375",
+    sort:"rand",
+    pagenum:1,
+    pagesize:1,
+    isShow:true
   }
 })

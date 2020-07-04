@@ -23,7 +23,7 @@
 <text>\n</text>
 <view class="btn-view">
 <image class="info-icon" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/setting.png?sign=a57d12038484718c5f82aa0444dbc5f4&t=1593831555"></image>
-<button class="backbtn" style="">我的设置</button>
+<button class="backbtn" bindtap="gotoSetting">我的设置</button>
 </view>
 <text>\n</text>
 <view class="btn-view">
@@ -31,5 +31,9 @@
 <button class="backbtn" bindtap="gotoIndex">返回主页</button>
 </view>
 <text>\n</text>
+</view>
+<view class="info" wx:if="{{isShow}}">
+<text style="font-weight:bold;">每日笑话</text>
+<text>\n{{list[0].content}}</text>
 </view>
 </view>
