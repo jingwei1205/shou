@@ -1,0 +1,11 @@
+/* pages/talk/talk.wxss */
+.outlayer{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.person{
+  font-weight: bold;
+}
+.photo{
+  width: 100%;
+}

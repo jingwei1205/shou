@@ -1,0 +1,39 @@
+<!--pages/me/me.wxml-->
+<view class="container">
+<view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text style="color:#aaa;font-size:14px;margin-bottom: 20px;">上海</text>
+</view>
+<view class="info">
+<text>\n</text>
+<image class="info-icon" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/name.png?sign=d52f22b6193533b4b1d8353699f0daae&t=1593828960"></image>
+<text class="info-text">史经伟\n\n</text>
+<image class="info-icon" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/id.png?sign=ca6f2243a3da2dff8cf799368315340f&t=1593830017"></image>
+<text class="info-text">1759223\n\n</text>
+<image class="info-icon" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/adress.png?sign=546381b10f28cbb6bbc76e16b1b79e9a&t=1593830105"></image>
+<text class="info-text">信息学院软件工程2班\n\n</text>
+</view>
+<view class="info" style="background-image: url('https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/bg1.jpg?sign=9398e1cfef277a093b2b3baf1b0a5201&t=1593705105')">
+<text>\n</text>
+<view class="btn-view">
+<image class="info-icon" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/discuss.png?sign=f96f8d5686518cbda3a715caa88f3663&t=1593833962"></image>
+<button class="backbtn" style="">我的讨论</button>
+</view>
+<text>\n</text>
+<view class="btn-view">
+<image class="info-icon" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/setting.png?sign=a57d12038484718c5f82aa0444dbc5f4&t=1593831555"></image>
+<button class="backbtn" bindtap="gotoSetting">我的设置</button>
+</view>
+<text>\n</text>
+<view class="btn-view">
+<image class="info-icon" src="https://6d79-mywebapp-7bmzs-1302514864.tcb.qcloud.la/images/main.png?sign=67a22037cef943541deccdb0d70dbb92&t=1593833990"></image>
+<button class="backbtn" bindtap="gotoIndex">返回主页</button>
+</view>
+<text>\n</text>
+</view>
+<view class="info" wx:if="{{isShow}}">
+<text style="font-weight:bold;">每日笑话</text>
+<text>\n{{list[0].content}}</text>
+</view>
+</view>

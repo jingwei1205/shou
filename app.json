@@ -1,13 +1,43 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/campus/campus",
     "pages/software/software",
     "pages/logs/logs",
-    "pages/campus/campus"
+    "pages/me/me",
+    "pages/talk/talk",
+    "pages/out/out",
+    "pages/setting/setting"
   ],
+  "tabBar": {
+    "color": "#FFFFFF",
+    "selectedColor": "#1296db",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/campus/campus",
+        "text": "校园资讯",
+        "iconPath": "pages/imgs/school.png",
+        "selectedIconPath": "pages/imgs/schooldown.png"
+      },
+      {
+        "pagePath": "pages/talk/talk",
+        "text": "院系介绍",
+        "iconPath": "pages/imgs/talk.png",
+        "selectedIconPath": "pages/imgs/talkdown.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人中心",
+        "iconPath": "pages/imgs/me.png",
+        "selectedIconPath": "pages/imgs/medown.png"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#4b5cc4",
+    "navigationBarBackgroundColor": "#0066ff",
     "navigationBarTitleText": "牵我的shou",
     "navigationBarTextStyle": "white"
   },

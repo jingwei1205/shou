@@ -1,0 +1,5 @@
+<!--pages/setting/setting.wxml-->
+<view style="width:90%">
+<text style="margin-left:20px;font-weight:bold;">每日一笑</text>
+<switch checked="{{isShow}}" bindchange="changeState" style="margin-left:100px"></switch>
+</view>
